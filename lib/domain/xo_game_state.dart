@@ -38,9 +38,9 @@ class XoGameState {
   bool get isDraw => roundFinished && winner == null;
 
   String get statusText {
-    if (winner != null) return 'الفائز ${winner!.symbol}';
-    if (isDraw) return 'تعادل';
-    return 'دور اللاعب ${currentPlayer.symbol}';
+    if (winner != null) return 'winner ${winner!.symbol}';
+    if (isDraw) return 'draw';
+    return 'player ${currentPlayer.symbol}\'s turn';
   }
 
   XoGameState copyWith({

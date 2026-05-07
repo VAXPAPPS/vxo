@@ -21,7 +21,7 @@ class XoScoreStrip extends StatelessWidget {
               child: _ScoreItem(label: 'X', value: score.xWins),
             ),
             Expanded(
-              child: _ScoreItem(label: 'تعادل', value: score.draws),
+              child: _ScoreItem(label: 'draw', value: score.draws),
             ),
             Expanded(
               child: _ScoreItem(label: 'O', value: score.oWins),

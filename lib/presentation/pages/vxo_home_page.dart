@@ -24,9 +24,9 @@ class _VxoHomePageState extends State<VxoHomePage> {
   String get _title {
     return switch (_page) {
       VxoPage.home => 'VXO',
-      VxoPage.game => 'اللعبة',
-      VxoPage.settings => 'الإعدادات',
-      VxoPage.stats => 'الإحصائيات',
+      VxoPage.game => 'The game',
+      VxoPage.settings => 'Settings',
+      VxoPage.stats => 'Statistics',
     };
   }
 

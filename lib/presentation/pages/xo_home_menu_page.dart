@@ -32,7 +32,7 @@ class XoHomeMenuPage extends StatelessWidget {
             children: [
               const XoHeaderPanel(
                 title: 'XO',
-                subtitle: 'لاعب ضد لاعب',
+                subtitle: 'Player vs Player',
                 icon: Icons.grid_3x3_rounded,
               ),
               const SizedBox(height: 14),
@@ -49,19 +49,19 @@ class XoHomeMenuPage extends StatelessWidget {
                       ElevatedButton.icon(
                         onPressed: onStart,
                         icon: const Icon(Icons.play_arrow_rounded),
-                        label: const Text('بدء اللعب'),
+                        label: const Text('Start Game'),
                       ),
                       const SizedBox(height: 10),
                       OutlinedButton.icon(
                         onPressed: onStats,
                         icon: const Icon(Icons.query_stats_rounded),
-                        label: const Text('الإحصائيات'),
+                        label: const Text('Statistics'),
                       ),
                       const SizedBox(height: 10),
                       OutlinedButton.icon(
                         onPressed: onSettings,
                         icon: const Icon(Icons.tune_rounded),
-                        label: const Text('الإعدادات'),
+                        label: const Text('Settings'),
                       ),
                     ],
                   ),

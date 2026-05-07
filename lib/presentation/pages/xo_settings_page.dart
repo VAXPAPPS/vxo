@@ -30,7 +30,7 @@ class XoSettingsPage extends StatelessWidget {
             children: [
               const XoHeaderPanel(
                 title: 'XO',
-                subtitle: 'إعدادات اللعب',
+                subtitle: 'Game settings',
                 icon: Icons.tune_rounded,
               ),
               const SizedBox(height: 14),
@@ -43,7 +43,7 @@ class XoSettingsPage extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
                       Text(
-                        'اللاعب الذي يبدأ',
+                        'Starting Player',
                         style: Theme.of(context).textTheme.labelLarge,
                       ),
                       const SizedBox(height: 10),
@@ -62,7 +62,7 @@ class XoSettingsPage extends StatelessWidget {
                         contentPadding: EdgeInsets.zero,
                         value: state.resultDialogEnabled,
                         onChanged: controller.setResultDialogEnabled,
-                        title: const Text('نافذة النتيجة'),
+                        title: const Text('Result Dialog'),
                         secondary: const Icon(Icons.open_in_new_rounded),
                       ),
                     ],
@@ -74,7 +74,7 @@ class XoSettingsPage extends StatelessWidget {
                 children: [
                   IconButton.filledTonal(
                     onPressed: onBack,
-                    tooltip: 'الرئيسية',
+                    tooltip: 'Home',
                     icon: Icon(Icons.arrow_back_rounded, color: textColor),
                   ),
                   const SizedBox(width: 10),
@@ -82,7 +82,7 @@ class XoSettingsPage extends StatelessWidget {
                     child: OutlinedButton.icon(
                       onPressed: controller.restartRound,
                       icon: const Icon(Icons.refresh_rounded),
-                      label: const Text('تطبيق وإعادة الجولة'),
+                      label: const Text('Restart Round'),
                     ),
                   ),
                 ],

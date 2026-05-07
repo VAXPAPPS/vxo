@@ -17,11 +17,11 @@ class XoResultDialog extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final title = state.winner == null
-        ? 'تعادل'
-        : 'فاز اللاعب ${state.winner!.symbol}';
+        ? 'draw'
+        : 'The player won ${state.winner!.symbol}';
     final content = state.winner == null
-        ? 'الجولة انتهت بدون فائز.'
-        : 'نتيجة جميلة. هل نبدأ جولة جديدة؟';
+        ? 'The round ended in a draw.'
+        : 'Great result. Shall we start a new round?';
 
     return AlertDialog(
       title: Text(title, textAlign: TextAlign.center),
@@ -31,12 +31,12 @@ class XoResultDialog extends StatelessWidget {
         OutlinedButton.icon(
           onPressed: onResetScores,
           icon: const Icon(Icons.restart_alt_rounded),
-          label: const Text('تصفير'),
+          label: const Text('Reset Scores'),
         ),
         ElevatedButton.icon(
           onPressed: onNewRound,
           icon: const Icon(Icons.play_arrow_rounded),
-          label: const Text('جولة جديدة'),
+          label: const Text('New Round'),
         ),
       ],
     );

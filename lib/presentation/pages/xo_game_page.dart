@@ -99,7 +99,7 @@ class _XoGamePageState extends State<XoGamePage> {
                 children: [
                   IconButton.filledTonal(
                     onPressed: widget.onBack,
-                    tooltip: 'الرئيسية',
+                    tooltip: 'Home',
                     icon: Icon(Icons.arrow_back_rounded, color: textColor),
                   ),
                   const SizedBox(width: 10),
@@ -107,19 +107,19 @@ class _XoGamePageState extends State<XoGamePage> {
                     child: OutlinedButton.icon(
                       onPressed: widget.controller.restartRound,
                       icon: const Icon(Icons.refresh_rounded),
-                      label: const Text('إعادة'),
+                      label: const Text('Restart Round'),
                     ),
                   ),
                   const SizedBox(width: 10),
                   IconButton.filledTonal(
                     onPressed: widget.onStats,
-                    tooltip: 'الإحصائيات',
+                    tooltip: 'Statistics',
                     icon: Icon(Icons.query_stats_rounded, color: textColor),
                   ),
                   const SizedBox(width: 10),
                   IconButton.filledTonal(
                     onPressed: widget.onSettings,
-                    tooltip: 'الإعدادات',
+                    tooltip: 'Settings',
                     icon: Icon(Icons.tune_rounded, color: textColor),
                   ),
                 ],

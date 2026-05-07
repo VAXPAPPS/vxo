@@ -29,7 +29,7 @@ class XoStatsPage extends StatelessWidget {
             children: [
               const XoHeaderPanel(
                 title: 'XO',
-                subtitle: 'سجل الجلسة',
+                subtitle: 'Session Record',
                 icon: Icons.query_stats_rounded,
               ),
               const SizedBox(height: 14),
@@ -40,13 +40,13 @@ class XoStatsPage extends StatelessWidget {
                   padding: const EdgeInsets.all(14),
                   child: Column(
                     children: [
-                      _StatRow(label: 'انتصارات X', value: score.xWins),
+                      _StatRow(label: 'X Wins', value: score.xWins),
                       const Divider(height: 22),
-                      _StatRow(label: 'انتصارات O', value: score.oWins),
+                      _StatRow(label: 'O Wins', value: score.oWins),
                       const Divider(height: 22),
-                      _StatRow(label: 'التعادلات', value: score.draws),
+                      _StatRow(label: 'Draws', value: score.draws),
                       const Divider(height: 22),
-                      _StatRow(label: 'عدد الجولات', value: score.totalRounds),
+                      _StatRow(label: 'Total Rounds', value: score.totalRounds),
                     ],
                   ),
                 ),
@@ -56,7 +56,7 @@ class XoStatsPage extends StatelessWidget {
                 children: [
                   IconButton.filledTonal(
                     onPressed: onBack,
-                    tooltip: 'الرئيسية',
+                    tooltip: 'Home',
                     icon: Icon(Icons.arrow_back_rounded, color: textColor),
                   ),
                   const SizedBox(width: 10),
@@ -64,7 +64,7 @@ class XoStatsPage extends StatelessWidget {
                     child: OutlinedButton.icon(
                       onPressed: controller.resetScores,
                       icon: const Icon(Icons.delete_sweep_rounded),
-                      label: const Text('تصفير النتائج'),
+                      label: const Text('Reset Scores'),
                     ),
                   ),
                 ],
