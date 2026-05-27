@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=vxo
+Comment=Flutter Application - vxo
+Exec=/usr/bin/vxo
+Icon=/usr/share/icons/hicolor/256x256/apps/vxo.png
+Terminal=false
+Categories=Utility;Development;
